@@ -80,9 +80,11 @@ const HomeSection = () => {
                     </div>
                 </div>
             </section>
-            <section className='ml-20 flex space-x-0'>
- <TweetCard/>
-            </section>
+            <section className='ml-20 flex flex-col space-x-0'>
+  {[1, 1, 1, 1, 1].map((item) => (
+    <TweetCard key={item} />
+  ))}
+</section>
         </div>
     )
 }
