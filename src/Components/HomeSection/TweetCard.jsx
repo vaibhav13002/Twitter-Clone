@@ -36,7 +36,7 @@ const TweetCard = () => {
     console.log("handle like tweet")
   }
   return (
-    <div className=''>
+    <div className='ml-auto'> 
       {/* <div className='flex items-center font-semibold text-gray-700 py2'>
             <RepeatIcon/>
             <p>You Retweet</p>
@@ -49,6 +49,7 @@ const TweetCard = () => {
           src='https://cdn4.iconfinder.com/data/icons/avatar-circle-1-1/72/78-256.png'
         />
         <div className='w-full'>
+          {/* <div className='flex justify-between items-center'> */}
           <div className='flex justify-between items-center'>
 
             <div className='flex cursor-pointer items-center space-x-2'>
@@ -56,7 +57,7 @@ const TweetCard = () => {
               <span className='text-gray-600'>@vaibhav . 2m</span>
               <img className='ml-2 w-5 h-5' src='https://th.bing.com/th?id=OIP.X7xE5WB3shYjMWVQYav9JwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2' alt='' />
             </div>
-            <div > {/* Button on the tweet delete and edit*/}
+            <div className='mb-2 flex justify-between items-right' > {/* Button on the tweet delete and edit*/}
               <Button
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
@@ -85,7 +86,7 @@ const TweetCard = () => {
 
           <div className='mt-2'>
             <div className='cursor-pointer'>
-              <p className='mb-2 p-0'>Twitter clone - full stack project using React and Spring boot</p>
+              <p className='mb-2 flex justify-between items-center'>Twitter clone - full stack project using React and Spring boot</p>
               <img className='w-[28rem] border border-gray-500 p-5 rounded-md' src='https://th.bing.com/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?pid=ImgDet&rs=1' alt='' />
             </div>
             <div className='py-5 flex flex-wrap justify-between items-center'>

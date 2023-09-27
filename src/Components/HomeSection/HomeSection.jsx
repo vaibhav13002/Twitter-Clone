@@ -38,10 +38,10 @@ const HomeSection = () => {
     return (
         <div className='space-y-5'>
             <section className='flex items-center'>
-                <h1 className='py-3 text-xl font-bold opacity-90 text-left ml-20'>Home</h1>
+                <h1 className='py-3 text-xl font-bold opacity-90 text-left'>Home</h1>
             </section>
             <section className={'pb-8'}> {/*This section contains the new tweet part(avatar img,form area, all 3 logo, image logo fun, tweet button)*/}
-                <div className='ml-20 flex space-x-0'>
+                <div className='flex space-x-0'>
                     <Avatar alt="username" src='https://cdn4.iconfinder.com/data/icons/avatar-circle-1-1/72/78-256.png' />
                     <div>
                         <form onSubmit={formik.handleSubmit}> {/*inbuilt in react which is taking as a form submisssion*/}
@@ -80,7 +80,7 @@ const HomeSection = () => {
                     </div>
                 </div>
             </section>
-            <section className='ml-20 flex flex-col space-x-0'>
+            <section className=' flex flex-col space-x-0'>
   {[1, 1, 1, 1, 1].map((item) => (
     <TweetCard key={item} />
   ))}
