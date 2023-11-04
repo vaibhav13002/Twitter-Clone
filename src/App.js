@@ -9,7 +9,7 @@ function App() {
     <div className="">
 
       <Routes>
-        <Route path="/" element={true?<HomePage/>:<Authentication/>}>  {/*Ternary Operator if true then home page dikhega varna auth*/}
+        <Route path="/*" element={true?<HomePage/>:<Authentication/>}>  {/*Ternary Operator if true then home page dikhega varna auth*/}
 
         </Route>
       </Routes>
